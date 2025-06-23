@@ -2,7 +2,6 @@ import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Layers, Pencil, Zap } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center gap-4 text-center">
           <div>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">Manage your content with Ease</h1>
-            <p className="text-gray-400 w-[70%] text-centermx-auto max-w-[700px]:">Streamline your content workflow, publish with confidence</p>
+            <p className="text-gray-400 w-[70%] text-center mx-auto max-w-[700px]:">Streamline your content workflow, publish with confidence</p>
           </div>
           <div className="flex gap-3">
             <Link
