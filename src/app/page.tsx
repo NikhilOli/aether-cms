@@ -15,7 +15,7 @@ export default function Home() {
           </div>
           <div className="flex gap-3">
             <Link
-            href={"/blogs"}
+            href={"/sign-in"}
             className="cursor-pointer bg-gray-200 hover:bg-gray-300 transition-all duration-200 delay-100 text-black px-4 py-1 rounded"
             >Try it out!</Link>
             <Button
@@ -32,7 +32,7 @@ export default function Home() {
             <Icons.CustomBlogIcons className="w-14 h-14 text-white" />
             <h3 className="text-xl font-bold text-gray-100">Intuitive Editor</h3>
             <p className="text-gray-400 w-[70%] text-center">Create and edit content with user-friendly interface</p>
-        </span>
+          </span>
           <span className="flex flex-col items-center gap-2">
           <Layers size={50} />
           <h3 className="text-xl font-bold text-gray-100">Flexible Tools</h3>

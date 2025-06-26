@@ -36,7 +36,7 @@ const page = () => {
         <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 p-8 gap-4">
             {
                 blogConfig.map((blogConfig, index) => {
-                    return <BlogCard title={blogConfig.title} description={blogConfig.description} image={blogConfig.image} url={blogConfig.url} index={index} /> 
+                    return <BlogCard key={index} title={blogConfig.title} description={blogConfig.description} image={blogConfig.image} url={blogConfig.url} index={index} /> 
                 })
             }
         </section>
