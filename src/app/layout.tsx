@@ -4,6 +4,8 @@ import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import Navbar from "@/components/Navbar";
+import AuthProvider from "@/components/providers/AuthProvider";
+import { Toaster } from "@/components/ui/sonner";
 
 
 const poppins = Poppins({
@@ -26,14 +28,17 @@ export default function RootLayout({
       <body
         className={` ${poppins.className} antialiased`}
       >
-        <SidebarProvider>
-          <AppSidebar />
-            <main className="w-full">
-              <SidebarTrigger />
-              <Navbar />
-              {children}
-            </main>
-      </SidebarProvider>
+        <AuthProvider>
+          <SidebarProvider>
+            <AppSidebar />
+              <main className="w-full">
+                <SidebarTrigger />
+                <Navbar />
+                {children}
+              </main>
+              <Toaster />
+          </SidebarProvider>
+        </AuthProvider>
       </body>
     </html>
   );
